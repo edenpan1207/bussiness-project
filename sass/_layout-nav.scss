@@ -1,0 +1,63 @@
+/*-----------------------------
+	$NAV
+------------------------------*/
+
+.wrap {
+    padding-top: 90px;
+}
+
+.navbar {
+    min-height: 90px;
+}
+
+
+/* button class => navbar-toggle fix hamburger's position*/
+
+._ham-position {
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.navbar-brand {
+    padding-top: 15px;
+}
+
+.navbar-nav {
+    @include ipad {
+        margin-top: -50px;
+    }
+    @include l-phone {
+        padding-top: 40px;
+    }
+    li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        a {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-right: 1px solid #ccc;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            span {
+                margin-top: 5px;
+                font-size: 14px;
+                display: block;
+                font-weight: normal;
+                font-family: arial;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+.nav {
+    li {
+        a {
+            &:hover {
+                background: #0383c0 !important;
+                color: #fff !important;
+            }
+        }
+    }
+}

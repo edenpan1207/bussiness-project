@@ -1,0 +1,133 @@
+/*-----------------------------
+	$MAIN - 1 (index.html)
+------------------------------*/
+
+
+/* jumbotron's fix style class */
+
+.fix-jum {
+    margin: 0;
+    min-height: 450px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h1 {
+        font-size: 55px;
+        padding-bottom: 10px;
+    }
+    @include ipad {
+        min-height: 300px;
+        img {
+            display: none;
+        }
+    }
+}
+
+.section-first {
+    background: #f4f4f4;
+    h3 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+}
+
+
+/* font-awesome change fa color*/
+
+.fa-style {
+    color: #0383c0;
+}
+
+.section-second {
+    @include section-style;
+    h2 {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        margin-top: 20px;
+    }
+}
+
+.section-third {
+    h2 {
+        font-size: 36px;
+    }
+}
+
+.section-menu {
+    li {
+        text-indent: 10px;
+        font-size: 20px;
+        line-height: 1.7em;
+        i {
+            padding-right: 10px;
+        }
+    }
+}
+
+.section-forth {
+    @include section-style;
+    h2 {
+        font-size: 36px;
+    }
+}
+
+
+/*-----------------------------
+	$MAIN - 2 (about.html)
+------------------------------*/
+
+.section-title {
+    background-color: #0383c0;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h2 {
+        font-size: 36px;
+    }
+    small {
+        color: #ccc !important;
+        padding-left: 10px;
+    }
+}
+
+.section-welcome {
+    line-height: 1.2em;
+    h3 {
+        font-size: 32px;
+    }
+}
+
+.item img {
+    margin: 0 auto;
+}
+
+
+/* slider's background-color */
+
+.bg-color {
+    background: linear-gradient(gray, black);
+}
+
+.distance {
+    padding-top: 20px;
+}
+
+
+/*-----------------------------
+	$MAIN - 3 (services.html)
+------------------------------*/
+
+.type-fix {
+    padding: 10px 0;
+    line-height: 1.2em;
+    label {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,220 @@
+/*
+ * RESET --- reset css default style
+ * NAV --- web layout of navigation part 
+ * MAIN --- set four pages of html file's style fix:
+ 	1. index
+ 	2. about
+ 	3. services
+ 	4. contact
+
+ * FOOTER --- web layout include final information
+ */
+/*--------------------------------
+    $RESET
+--------------------------------*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: arial; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* for this project */
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; }
+
+p {
+  line-height: 1.2em; }
+
+.section {
+  padding: 30px 0; }
+
+/*-----------------------------
+	$NAV
+------------------------------*/
+.wrap {
+  padding-top: 90px; }
+
+.navbar {
+  min-height: 90px; }
+
+/* button class => navbar-toggle fix hamburger's position*/
+._ham-position {
+  margin-top: 25px;
+  margin-right: 25px; }
+
+.navbar-brand {
+  padding-top: 15px; }
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: -50px; } }
+
+@media (max-width: 568px) {
+  .navbar-nav {
+    padding-top: 40px; } }
+
+.navbar-nav li {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .navbar-nav li a {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; }
+    .navbar-nav li a span {
+      margin-top: 5px;
+      font-size: 14px;
+      display: block;
+      font-weight: normal;
+      font-family: arial;
+      text-transform: none; }
+
+.nav li a:hover {
+  background: #0383c0 !important;
+  color: #fff !important; }
+
+/*-----------------------------
+	$MAIN - 1 (index.html)
+------------------------------*/
+/* jumbotron's fix style class */
+.fix-jum {
+  margin: 0;
+  min-height: 450px;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .fix-jum h1 {
+    font-size: 55px;
+    padding-bottom: 10px; }
+  @media (max-width: 768px) {
+    .fix-jum {
+      min-height: 300px; }
+      .fix-jum img {
+        display: none; } }
+
+.section-first {
+  background: #f4f4f4; }
+  .section-first h3 {
+    font-size: 24px;
+    padding-top: 20px; }
+
+/* font-awesome change fa color*/
+.fa-style {
+  color: #0383c0; }
+
+.section-second {
+  background-color: #0383c0;
+  color: #fff;
+  padding: 60px 0; }
+  .section-second h2 {
+    font-size: 50px;
+    margin-bottom: 25px; }
+  .section-second p {
+    font-size: 20px; }
+  .section-second a {
+    margin-top: 20px; }
+
+.section-third h2 {
+  font-size: 36px; }
+
+.section-menu li {
+  text-indent: 10px;
+  font-size: 20px;
+  line-height: 1.7em; }
+  .section-menu li i {
+    padding-right: 10px; }
+
+.section-forth {
+  background-color: #0383c0;
+  color: #fff;
+  padding: 60px 0; }
+  .section-forth h2 {
+    font-size: 36px; }
+
+/*-----------------------------
+	$MAIN - 2 (about.html)
+------------------------------*/
+.section-title {
+  background-color: #0383c0;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .section-title h2 {
+    font-size: 36px; }
+  .section-title small {
+    color: #ccc !important;
+    padding-left: 10px; }
+
+.section-welcome {
+  line-height: 1.2em; }
+  .section-welcome h3 {
+    font-size: 32px; }
+
+.item img {
+  margin: 0 auto; }
+
+/* slider's background-color */
+.bg-color {
+  background: linear-gradient(gray, black); }
+
+.distance {
+  padding-top: 20px; }
+
+/*-----------------------------
+	$MAIN - 3 (services.html)
+------------------------------*/
+.type-fix {
+  padding: 10px 0;
+  line-height: 1.2em; }
+  .type-fix label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px; }
+
+/*-----------------------------
+	$FOOTER
+------------------------------*/
+.footer {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background-color: #f4f4f4; }

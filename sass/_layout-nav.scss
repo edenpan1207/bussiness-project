@@ -32,6 +32,9 @@
     li {
         padding-top: 5px;
         padding-bottom: 5px;
+        @include l-phone {
+        padding: 0;
+        }
         a {
             padding: 20px;
             font-size: 18px;

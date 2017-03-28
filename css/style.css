@@ -193,7 +193,12 @@ p {
   .section-welcome h3 {
     font-size: 32px; }
 
-.item img {
+.item {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 500px;
+}
+.item p {
   margin: 0 auto; }
 
 /* slider's background-color */
